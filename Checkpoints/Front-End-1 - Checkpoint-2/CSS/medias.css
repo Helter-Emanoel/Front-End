@@ -1,0 +1,36 @@
+@media (max-width: 428px) {
+  .logo {
+    width: 22vw;
+    margin-left: 10%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hamburguer {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 10%;
+  }
+
+  .banner h1 {
+    width: 70vw;
+    height: 12vh;
+  }
+
+  .banner h4 {
+    width: 90vw;
+  }
+
+  .explorar {
+    width: 60vw;
+    height: 12vh;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 2675px) {
+}
