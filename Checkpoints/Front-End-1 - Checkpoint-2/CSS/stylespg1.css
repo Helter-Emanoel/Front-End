@@ -10,31 +10,13 @@
 
 body {
   width: 100vw;
-
-  background: rgb(7, 116, 7);
-  background: -moz-linear-gradient(
-    left,
-    rgb(7, 116, 7) 0%,
-    rgb(7, 233, 75) 50%,
-    #ffffff 100%
-  );
-  background: -webkit-linear-gradient(
-    left,
-    rgb(7, 116, 7) 0%,
-    rgb(7, 233, 75) 50%,
-    #ffffff 100%
-  );
-  background: linear-gradient(
-    to right,
-    rgb(7, 116, 7) 0%,
-    rgb(7, 233, 75) 50%,
-    #ffffff 100%
-  );
+  background-color: rgb(149, 236, 149);
 }
 
 .header {
   height: 15vh;
   display: flex;
+  background-color: rgb(149, 236, 149);
 }
 
 .div-logo {
@@ -111,7 +93,7 @@ nav ul {
 
 .banner {
   height: 85vh;
-  background-image: url(../IMG/banner4.jpg);
+  background-image: url(../IMG/banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -127,7 +109,6 @@ nav ul {
   height: auto;
   text-align: center;
   background-color: rgba(250, 235, 215, 0.514);
-  border: 2px solid rgb(5, 85, 5);
   border-radius: 5px;
   color: rgb(5, 85, 5);
   font-size: 3rem;
@@ -136,7 +117,7 @@ nav ul {
 .banner h1:hover {
   transform: scale(1.2);
   transition: 1s;
-  border: none;
+  border: 2px solid rgb(5, 85, 5);
 }
 
 .banner h4 {
@@ -158,7 +139,7 @@ nav ul {
 
 .explorar {
   height: 10vh;
-  width: 15vw;
+  width: 200px;
   font-size: 1.2rem;
   font-weight: bold;
   background-color: rgba(250, 235, 215, 0.514);
@@ -205,16 +186,19 @@ main {
 
 .cards {
   width: 400px;
-  height: 500px;
+  height: 540px;
   border: 5px solid black;
   border-radius: 15px;
   margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.cards:hover {
+/* .cards:hover {
   transform: scale(1.1);
   transition: 1s;
-}
+} */
 
 .cards-img img {
   width: 100%;
@@ -226,6 +210,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 40%;
 }
 
 .cards-title {
@@ -241,10 +226,11 @@ main {
 }
 
 .cards-button {
-  width: 80%;
+  width: 300px;
   height: 45px;
   border-radius: 10px;
-  margin-top: 2%;
+  position: absolute;
+  margin-top: 16%;
 }
 
 .cards-button a {
@@ -260,7 +246,7 @@ main {
 footer {
   height: 365px;
   width: 100%;
-  background-color: black;
+  background-color: rgb(7, 116, 7);
 }
 
 .footer-top {
@@ -282,7 +268,6 @@ footer {
 
 .aluno:hover {
   transform: scale(1.2);
-  color: #49ff18;
   transition: 1s;
 }
 
@@ -301,18 +286,15 @@ footer {
   transition: 1s;
 }
 
-.footer-botton {
-  display: flex;
-  justify-content: center;
-  margin-top: 5%;
-}
-
 .footer-desc {
   color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 12%;
+  background-color: rgb(7, 116, 7);
 }
 
 .footer-desc:hover {
-  transform: scale(1.2);
-  color: #49ff18;
+  transform: scale(1.1);
   transition: 1s;
 }
